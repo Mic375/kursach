@@ -111,6 +111,7 @@ namespace Курсач
 
         private void btn_add_File_Click(object sender, EventArgs e)
         {
+            string a = null;
             OpenFileDialog file = new OpenFileDialog();
             file.Filter = "All files (*.*)|*.*";
             if (file.ShowDialog() == DialogResult.OK)
