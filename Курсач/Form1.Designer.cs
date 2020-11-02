@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Box_send = new System.Windows.Forms.TextBox();
             this.Box_theme = new System.Windows.Forms.TextBox();
@@ -48,6 +49,9 @@
             this.Box_com_gr = new System.Windows.Forms.ComboBox();
             this.Box_sp = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
+            this.btn_openList = new System.Windows.Forms.Button();
+            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Box_send
@@ -84,7 +88,7 @@
             // 
             // btn_send
             // 
-            this.btn_send.Location = new System.Drawing.Point(552, 406);
+            this.btn_send.Location = new System.Drawing.Point(411, 406);
             this.btn_send.Name = "btn_send";
             this.btn_send.Size = new System.Drawing.Size(87, 32);
             this.btn_send.TabIndex = 4;
@@ -201,12 +205,13 @@
             "2 Курс",
             "3 Курс",
             "4 Курс",
-            "Преподователи"});
+            "Преп"});
             this.Box_com_gr.Location = new System.Drawing.Point(697, 15);
             this.Box_com_gr.Name = "Box_com_gr";
             this.Box_com_gr.Size = new System.Drawing.Size(334, 21);
             this.Box_com_gr.TabIndex = 16;
-            this.Box_com_gr.Text = "Список";
+            this.Box_com_gr.Text = "Списки";
+            this.Box_com_gr.Visible = false;
             this.Box_com_gr.SelectedIndexChanged += new System.EventHandler(this.Box_com_gr_SelectedIndexChanged);
             // 
             // Box_sp
@@ -217,6 +222,7 @@
             this.Box_sp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Box_sp.Size = new System.Drawing.Size(334, 343);
             this.Box_sp.TabIndex = 17;
+            this.Box_sp.Visible = false;
             this.Box_sp.TextChanged += new System.EventHandler(this.Box_sp_TextChanged);
             // 
             // btn_save
@@ -229,11 +235,26 @@
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // btn_openList
+            // 
+            this.btn_openList.Location = new System.Drawing.Point(539, 406);
+            this.btn_openList.Name = "btn_openList";
+            this.btn_openList.Size = new System.Drawing.Size(100, 32);
+            this.btn_openList.TabIndex = 19;
+            this.btn_openList.Text = "Открыть Списки";
+            this.btn_openList.UseVisualStyleBackColor = true;
+            this.btn_openList.Click += new System.EventHandler(this.btn_openList_Click);
+            // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(Курсач.Form1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 450);
+            this.Controls.Add(this.btn_openList);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.Box_sp);
             this.Controls.Add(this.Box_com_gr);
@@ -259,6 +280,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Рассылка";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,9 +304,11 @@
         private System.Windows.Forms.Button btn_av;
         private System.Windows.Forms.TextBox Box_Name;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox Box_com_gr;
-        private System.Windows.Forms.TextBox Box_sp;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_openList;
+        public System.Windows.Forms.ComboBox Box_com_gr;
+        public System.Windows.Forms.TextBox Box_sp;
+        private System.Windows.Forms.BindingSource form1BindingSource;
     }
 }
 

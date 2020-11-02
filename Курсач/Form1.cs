@@ -80,7 +80,7 @@ namespace Курсач
             }
             return (NameFail);
         }
-        private void Box_com_gr_SelectedIndexChanged(object sender, EventArgs e)
+        public void Box_com_gr_SelectedIndexChanged(object sender, EventArgs e)
         {
             Box_com_gr.DropDownStyle = ComboBoxStyle.DropDownList;
             string selectedState = Box_com_gr.SelectedItem.ToString();  //MessageBox.Show(selectedState);
@@ -111,7 +111,7 @@ namespace Курсач
 
         private void btn_add_File_Click(object sender, EventArgs e)
         {
-            string a = null;
+            
             OpenFileDialog file = new OpenFileDialog();
             file.Filter = "All files (*.*)|*.*";
             if (file.ShowDialog() == DialogResult.OK)
@@ -124,10 +124,10 @@ namespace Курсач
         {
             int x;
             x = Convert.ToInt32(Box_sp.Lines.Length);
-            int selectedIndex = Box_com_gr.SelectedIndex;
-            string Namefail;
-            Namefail = boxselekt(selectedIndex);
-            string[] lines = File.ReadAllLines(Namefail, Encoding.UTF8);
+            //int selectedIndex = Box_com_gr.SelectedIndex;
+
+            //DataBase.NameFile = boxselekt(selectedIndex);
+            string[] lines = File.ReadAllLines(DataBase.NameFile);
             for (int c = 0; c < x; c++)
             {
 
@@ -156,6 +156,13 @@ namespace Курсач
                     "Ошибка, удалите пустые строки", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+        }
+
+        private void btn_openList_Click(object sender, EventArgs e)
+        {
+            Form2 Tasklist = new Form2();
+            Tasklist.Show();
+            
         }
     }
 }
