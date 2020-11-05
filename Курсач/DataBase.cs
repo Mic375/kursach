@@ -10,5 +10,6 @@ namespace Курсач
     {
         public static string NameFile;
         public static int selectedIndex;
+        public static int countLines;
     }
 }

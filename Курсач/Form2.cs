@@ -19,26 +19,27 @@ namespace Курсач
 
         public string boxselekt(int selectedIndex)
         {
-            
+            string NameFile = null;
             switch (selectedIndex)
             {
+                
                 case 0:
-                    DataBase.NameFile = "..\\Списки\\1Курс.txt";
+                    NameFile = "..\\Списки\\1Курс.txt";
                     break;
                 case 1:
-                    DataBase.NameFile = "..\\Списки\\2Курс.txt";
+                    NameFile = "..\\Списки\\2Курс.txt";
                     break;
                 case 2:
-                    DataBase.NameFile = "..\\Списки\\3Курс.txt";
+                    NameFile = "..\\Списки\\3Курс.txt";
                     break;
                 case 3:
-                    DataBase.NameFile = "..\\Списки\\4Курс.txt";
+                    NameFile = "..\\Списки\\4Курс.txt";
                     break;
                 case 4:
-                    DataBase.NameFile = "..\\Списки\\Преп.txt";
+                    NameFile = "..\\Списки\\Преп.txt";
                     break;
             }
-            return (DataBase.NameFile);
+            return (NameFile);
         }
         public void Box_com_gr_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -52,12 +53,14 @@ namespace Курсач
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            DataBase.countLines = Convert.ToInt32(Box_sp.Lines.Length);
             int selectedIndex = Box_com_gr.SelectedIndex;
-            string Namefail;
-            Namefail = boxselekt(selectedIndex);
-            StreamWriter save = new StreamWriter(Namefail);
+            //string Namefail;
+            DataBase.NameFile = boxselekt(selectedIndex);
+            StreamWriter save = new StreamWriter(DataBase.NameFile);
             save.WriteLine(Box_sp.Text);
             save.Close();
+            this.Close();
         }
     }
 }
