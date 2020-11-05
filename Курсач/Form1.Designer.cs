@@ -46,9 +46,6 @@
             this.btn_av = new System.Windows.Forms.Button();
             this.Box_Name = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.Box_com_gr = new System.Windows.Forms.ComboBox();
-            this.Box_sp = new System.Windows.Forms.TextBox();
-            this.btn_save = new System.Windows.Forms.Button();
             this.btn_openList = new System.Windows.Forms.Button();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
@@ -197,44 +194,6 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Имя";
             // 
-            // Box_com_gr
-            // 
-            this.Box_com_gr.FormattingEnabled = true;
-            this.Box_com_gr.Items.AddRange(new object[] {
-            "1 Курс",
-            "2 Курс",
-            "3 Курс",
-            "4 Курс",
-            "Преп"});
-            this.Box_com_gr.Location = new System.Drawing.Point(697, 15);
-            this.Box_com_gr.Name = "Box_com_gr";
-            this.Box_com_gr.Size = new System.Drawing.Size(334, 21);
-            this.Box_com_gr.TabIndex = 16;
-            this.Box_com_gr.Text = "Списки";
-            this.Box_com_gr.Visible = false;
-            this.Box_com_gr.SelectedIndexChanged += new System.EventHandler(this.Box_com_gr_SelectedIndexChanged);
-            // 
-            // Box_sp
-            // 
-            this.Box_sp.Location = new System.Drawing.Point(697, 47);
-            this.Box_sp.Multiline = true;
-            this.Box_sp.Name = "Box_sp";
-            this.Box_sp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Box_sp.Size = new System.Drawing.Size(334, 343);
-            this.Box_sp.TabIndex = 17;
-            this.Box_sp.Visible = false;
-            this.Box_sp.TextChanged += new System.EventHandler(this.Box_sp_TextChanged);
-            // 
-            // btn_save
-            // 
-            this.btn_save.Location = new System.Drawing.Point(953, 406);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(78, 32);
-            this.btn_save.TabIndex = 18;
-            this.btn_save.Text = "Принять";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
             // btn_openList
             // 
             this.btn_openList.Location = new System.Drawing.Point(539, 406);
@@ -253,11 +212,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 450);
+            this.ClientSize = new System.Drawing.Size(668, 450);
             this.Controls.Add(this.btn_openList);
-            this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.Box_sp);
-            this.Controls.Add(this.Box_com_gr);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Box_Name);
             this.Controls.Add(this.btn_av);
@@ -304,10 +260,7 @@
         private System.Windows.Forms.Button btn_av;
         private System.Windows.Forms.TextBox Box_Name;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Button btn_openList;
-        public System.Windows.Forms.ComboBox Box_com_gr;
-        public System.Windows.Forms.TextBox Box_sp;
         private System.Windows.Forms.BindingSource form1BindingSource;
     }
 }

@@ -20,7 +20,7 @@ namespace Курсач
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Box_mail_TextChanged(object sender, EventArgs e)
@@ -48,57 +48,11 @@ namespace Курсач
 
         }
 
-        private void Box_sp_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Box_Name_TextChanged(object sender, EventArgs e)
         {
 
         }
-        public string boxselekt(int selectedIndex)
-        {
-            string NameFail = null;
-            switch (selectedIndex)
-            {
-                case 0:
-                    NameFail = "..\\Списки\\1Курс.txt";
-                    break;
-                case 1:
-                    NameFail = "..\\Списки\\2Курс.txt";
-                    break;
-                case 2:
-                    NameFail = "..\\Списки\\3Курс.txt";
-                    break;
-                case 3:
-                    NameFail = "..\\Списки\\4Курс.txt";
-                    break;
-                case 4:
-                    NameFail = "..\\Списки\\Преп.txt";
-                    break;
-            }
-            return (NameFail);
-        }
-        public void Box_com_gr_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Box_com_gr.DropDownStyle = ComboBoxStyle.DropDownList;
-            string selectedState = Box_com_gr.SelectedItem.ToString();  //MessageBox.Show(selectedState);
-            int selectedIndex = Box_com_gr.SelectedIndex;
-            string Namefail;
-            Namefail = boxselekt(selectedIndex);
-            Box_sp.Text = File.ReadAllText(Namefail);
-        }
-
-        private void btn_save_Click(object sender, EventArgs e)
-        {
-            int selectedIndex = Box_com_gr.SelectedIndex;
-            string Namefail;
-            Namefail = boxselekt(selectedIndex);
-            StreamWriter save = new StreamWriter(Namefail);
-            save.WriteLine(Box_sp.Text);
-            save.Close();
-        }
+        
 
         private void btn_av_Click(object sender, EventArgs e)
         {
@@ -122,13 +76,13 @@ namespace Курсач
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            int x;
-            x = Convert.ToInt32(Box_sp.Lines.Length);
+            
+            //x = Convert.ToInt32(Box_sp.Lines.Length);
             //int selectedIndex = Box_com_gr.SelectedIndex;
-
             //DataBase.NameFile = boxselekt(selectedIndex);
-            string[] lines = File.ReadAllLines(DataBase.NameFile);
-            for (int c = 0; c < x; c++)
+            string abc = DataBase.NameFile;
+            string[] lines = File.ReadAllLines(abc, Encoding.UTF8);
+            for (int c = 0; c < DataBase.countLines; c++)
             {
 
                 try
