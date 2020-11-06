@@ -12,7 +12,7 @@ namespace Курсач
 {
     public partial class Form1 : Form
     {
-        string a = null;
+        
         public Form1()
         {
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace Курсач
         }
         
 
-        private void btn_av_Click(object sender, EventArgs e)
+        private void btn_av_Click(object sender, EventArgs e) // Тестовая кнопка
         {
             Box_mail.Text = "ntcn.ntcn.00@inbox.ru";
             Box_Name.Text = "Test";
@@ -63,31 +63,25 @@ namespace Курсач
             Box_opis.Text = "Test";
         }
 
-        private void btn_add_File_Click(object sender, EventArgs e)
+        private void btn_add_File_Click(object sender, EventArgs e) // кнопка прикрепляет файл
         {
             
             OpenFileDialog file = new OpenFileDialog();
             file.Filter = "All files (*.*)|*.*";
             if (file.ShowDialog() == DialogResult.OK)
             {
-                a = file.FileName;
+                DataBase.Fullpath = file.FileName;
             }
         }
 
         private void btn_send_Click(object sender, EventArgs e)
-        {
-            
-            //x = Convert.ToInt32(Box_sp.Lines.Length);
-            //int selectedIndex = Box_com_gr.SelectedIndex;
-            //DataBase.NameFile = boxselekt(selectedIndex);
-            string abc = DataBase.NameFile;
-            string[] lines = File.ReadAllLines(abc, Encoding.UTF8);
-            for (int c = 0; c < DataBase.countLines; c++)
+        {    
+            string[] lines = File.ReadAllLines(DataBase.NameFile, Encoding.UTF8); // читает файл со списками построчно
+            for (int i = 0; i < DataBase.countLines; i++)
             {
-
                 try
                 {
-                    Box_send.Text = lines[c];
+                    Box_send.Text = lines[i];                                                         // вставляет адресс в textbox
                     MailAddress from = new MailAddress(Box_mail.Text, Box_Name.Text);                 // отправитель - устанавливаем адрес и отображаемое в письме имя                                                                    
                     MailAddress to = new MailAddress(Box_send.Text);                                  // кому отправляем                                                         
                     MailMessage m = new MailMessage(from, to);                                        // создаем объект сообщения                                                                       
@@ -97,9 +91,9 @@ namespace Курсач
                     SmtpClient smtp = new SmtpClient("smtp.mail.ru");                                 // адрес smtp-сервера и порт, с которого будем отправлять письмо                                                                      
                     smtp.Credentials = new NetworkCredential(Box_mail.Text, Box_pas.Text);            // логин и пароль  
                     smtp.EnableSsl = true;
-                    if (a != null)
+                    if (DataBase.Fullpath != null)
                     {
-                        m.Attachments.Add(new Attachment(a));
+                        m.Attachments.Add(new Attachment(DataBase.Fullpath));
                     }
                     smtp.Send(m);                                                                     // Отправка мыла                                                                        
                     Console.Read();

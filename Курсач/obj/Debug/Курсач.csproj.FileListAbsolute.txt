@@ -29,3 +29,4 @@ C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.csproj.CoreCompileI
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.exe
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.pdb
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.Form2.resources
+C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.Form3.resources

@@ -48,14 +48,12 @@ namespace Курсач
             int selectedIndex = Box_com_gr.SelectedIndex;
             DataBase.NameFile = boxselekt(selectedIndex);
             Box_sp.Text = File.ReadAllText(DataBase.NameFile);
-            DataBase.selectedIndex = selectedIndex;
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
             DataBase.countLines = Convert.ToInt32(Box_sp.Lines.Length);
             int selectedIndex = Box_com_gr.SelectedIndex;
-            //string Namefail;
             DataBase.NameFile = boxselekt(selectedIndex);
             StreamWriter save = new StreamWriter(DataBase.NameFile);
             save.WriteLine(Box_sp.Text);

@@ -1,0 +1,63 @@
+﻿using System;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
+using System.IO;
+using System.Text;
+using System.Security.Cryptography.X509Certificates;
+using System.Collections.Specialized;
+using System.Linq.Expressions;
+
+namespace Курсач
+{
+    public partial class Form3 : Form
+    {
+        string[] lines = File.ReadAllLines(DataBase.Login, Encoding.UTF8);
+        public Form3()
+        {
+            InitializeComponent();
+            
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Form1 task = new Form1();
+            task.Visible = false;
+            if(lines[2]=="true")
+            {
+                checkBox1.Checked = true;
+            }
+            if (lines[0] != null && lines[1] != null && checkBox1.Checked == true)
+            {
+                Login.Text = lines[0];
+                Password.Text = lines[1];
+            }
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Enter_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true) {
+                lines[0] = Login.Text;
+                lines[1] = Password.Text;
+                lines[2] = "true"; 
+            }
+            else
+            {
+                lines[0] = "1";
+                lines[1] = "1";
+                lines[2] = "1";
+            }
+            File.WriteAllLines(DataBase.Login, lines);
+            this.Hide();
+            Form1 task = new Form1();
+            task.Show();
+        }
+
+    }
+}

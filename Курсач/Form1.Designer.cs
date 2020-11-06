@@ -47,6 +47,7 @@
             this.Box_Name = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_openList = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -212,6 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(668, 450);
             this.Controls.Add(this.btn_openList);
             this.Controls.Add(this.label6);
@@ -231,8 +233,12 @@
             this.Controls.Add(this.Box_send);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(684, 489);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(684, 489);
             this.Name = "Form1";
+            this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Рассылка";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -262,6 +268,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_openList;
         private System.Windows.Forms.BindingSource form1BindingSource;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

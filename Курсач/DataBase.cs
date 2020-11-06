@@ -8,8 +8,9 @@ namespace Курсач
 {
      static class DataBase
     {
-        public static string NameFile;
-        public static int selectedIndex;
-        public static int countLines;
+        public static string NameFile; //путь к файлу списков
+        public static int countLines; // переменная для чтения файла по строкам
+        public static string Fullpath = null; // путь к прикрепленному файлу
+        public static string Login = "..\\Login\\Login.txt";
     }
 }

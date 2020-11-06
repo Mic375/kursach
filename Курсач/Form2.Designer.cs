@@ -50,6 +50,8 @@
             // Box_sp
             // 
             this.Box_sp.Location = new System.Drawing.Point(12, 44);
+            this.Box_sp.MaximumSize = new System.Drawing.Size(334, 343);
+            this.Box_sp.MinimumSize = new System.Drawing.Size(334, 343);
             this.Box_sp.Multiline = true;
             this.Box_sp.Name = "Box_sp";
             this.Box_sp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
