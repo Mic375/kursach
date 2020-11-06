@@ -4,9 +4,8 @@ using System.Net;
 using System.Net.Mail;
 using System.IO;
 using System.Text;
-using System.Security.Cryptography.X509Certificates;
-using System.Collections.Specialized;
-using System.Linq.Expressions;
+using System.Drawing;
+
 
 namespace Курсач
 {
@@ -20,17 +19,9 @@ namespace Курсач
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void Box_mail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Box_pas_TextChanged(object sender, EventArgs e)
-        {
-
+            Bx_File_condition.Image = Image.FromFile("..\\Imege\\Net.png");
+            Bx_ic.Image = Image.FromFile("..\\Imege\\ic4.png");
+            btn_exit.Image=Image.FromFile("..\\Imege\\exit1.png");
         }
 
         private void Box_send_TextChanged(object sender, EventArgs e)
@@ -52,18 +43,31 @@ namespace Курсач
         {
 
         }
-        
 
-        private void btn_av_Click(object sender, EventArgs e) // Тестовая кнопка
+        private void Bx_File_condition_Click(object sender, EventArgs e)
         {
-            Box_mail.Text = "ntcn.ntcn.00@inbox.ru";
+
+        }
+
+        private void Bx_ic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btn_av_Click(object sender, EventArgs e)                                         // Тестовая кнопка
+        {
+            DataBase.Login = "ntcn.ntcn.00@inbox.ru";
             Box_Name.Text = "Test";
-            Box_pas.Text = "Test123test456test789tes";
+            DataBase.password = "Test123test456test789tes";
             Box_theme.Text = "Test";
             Box_opis.Text = "Test";
         }
 
-        private void btn_add_File_Click(object sender, EventArgs e) // кнопка прикрепляет файл
+        private void btn_add_File_Click(object sender, EventArgs e)                                   // кнопка прикрепляет файл
         {
             
             OpenFileDialog file = new OpenFileDialog();
@@ -71,25 +75,26 @@ namespace Курсач
             if (file.ShowDialog() == DialogResult.OK)
             {
                 DataBase.Fullpath = file.FileName;
+                Bx_File_condition.Image = Image.FromFile("..\\Imege\\Est.png");
             }
         }
 
         private void btn_send_Click(object sender, EventArgs e)
         {    
-            string[] lines = File.ReadAllLines(DataBase.NameFile, Encoding.UTF8); // читает файл со списками построчно
+            string[] lines = File.ReadAllLines(DataBase.NameFile, Encoding.UTF8);                     // читает файл со списками построчно
             for (int i = 0; i < DataBase.countLines; i++)
             {
                 try
                 {
                     Box_send.Text = lines[i];                                                         // вставляет адресс в textbox
-                    MailAddress from = new MailAddress(Box_mail.Text, Box_Name.Text);                 // отправитель - устанавливаем адрес и отображаемое в письме имя                                                                    
+                    MailAddress from = new MailAddress(DataBase.Login, Box_Name.Text);                // отправитель - устанавливаем адрес и отображаемое в письме имя                                                                    
                     MailAddress to = new MailAddress(Box_send.Text);                                  // кому отправляем                                                         
                     MailMessage m = new MailMessage(from, to);                                        // создаем объект сообщения                                                                       
                     m.Subject = Box_theme.Text;                                                       // тема письма                                                                           
                     m.Body = Box_opis.Text;                                                           // текст письма                                                          
                     m.IsBodyHtml = true;                                                              // письмо представляет код html  
                     SmtpClient smtp = new SmtpClient("smtp.mail.ru");                                 // адрес smtp-сервера и порт, с которого будем отправлять письмо                                                                      
-                    smtp.Credentials = new NetworkCredential(Box_mail.Text, Box_pas.Text);            // логин и пароль  
+                    smtp.Credentials = new NetworkCredential(DataBase.Login, DataBase.password);      // логин и пароль  
                     smtp.EnableSsl = true;
                     if (DataBase.Fullpath != null)
                     {
@@ -104,13 +109,14 @@ namespace Курсач
                     "Ошибка, удалите пустые строки", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+            Form4 Tasklist = new Form4();
+            Tasklist.Show();
         }
 
         private void btn_openList_Click(object sender, EventArgs e)
         {
             Form2 Tasklist = new Form2();
             Tasklist.Show();
-            
         }
     }
 }

@@ -30,3 +30,16 @@ C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.exe
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.pdb
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.Form2.resources
 C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.Form3.resources
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\bin\Debug\Курсач.exe.config
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\bin\Debug\Курсач.exe
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\bin\Debug\Курсач.pdb
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.csprojAssemblyReference.cache
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Form1.resources
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Form2.resources
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Form3.resources
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Properties.Resources.resources
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.csproj.GenerateResource.cache
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.csproj.CoreCompileInputs.cache
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.exe
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.pdb
+C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Form4.resources

@@ -54,27 +54,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label1.Location = new System.Drawing.Point(32, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Логин";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label2.Location = new System.Drawing.Point(32, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Пароль";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(109, 100);
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.checkBox1.Location = new System.Drawing.Point(35, 98);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 17);
+            this.checkBox1.Size = new System.Drawing.Size(99, 21);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Запомнить";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -82,9 +85,10 @@
             // 
             // Enter
             // 
-            this.Enter.Location = new System.Drawing.Point(222, 96);
+            this.Enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.Enter.Location = new System.Drawing.Point(177, 92);
             this.Enter.Name = "Enter";
-            this.Enter.Size = new System.Drawing.Size(75, 23);
+            this.Enter.Size = new System.Drawing.Size(120, 31);
             this.Enter.TabIndex = 5;
             this.Enter.Text = "Войти";
             this.Enter.UseVisualStyleBackColor = true;
@@ -94,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 174);
+            this.ClientSize = new System.Drawing.Size(344, 151);
             this.ControlBox = false;
             this.Controls.Add(this.Enter);
             this.Controls.Add(this.checkBox1);
@@ -104,9 +108,9 @@
             this.Controls.Add(this.Login);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(466, 213);
+            this.MaximumSize = new System.Drawing.Size(360, 190);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(466, 213);
+            this.MinimumSize = new System.Drawing.Size(360, 190);
             this.Name = "Form3";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

@@ -12,7 +12,7 @@ namespace Курсач
 {
     public partial class Form3 : Form
     {
-        string[] lines = File.ReadAllLines(DataBase.Login, Encoding.UTF8);
+        string[] lines = File.ReadAllLines(DataBase.LoginFail, Encoding.UTF8);
         public Form3()
         {
             InitializeComponent();
@@ -53,7 +53,9 @@ namespace Курсач
                 lines[1] = "1";
                 lines[2] = "1";
             }
-            File.WriteAllLines(DataBase.Login, lines);
+            DataBase.Login = Login.Text;
+            DataBase.password = Password.Text;
+            File.WriteAllLines(DataBase.LoginFail, lines);
             this.Hide();
             Form1 task = new Form1();
             task.Show();
