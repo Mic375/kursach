@@ -39,16 +39,18 @@
             // 
             // Login
             // 
+            this.Login.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Login.Location = new System.Drawing.Point(109, 24);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(188, 20);
+            this.Login.Size = new System.Drawing.Size(188, 22);
             this.Login.TabIndex = 0;
             // 
             // Password
             // 
+            this.Password.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Password.Location = new System.Drawing.Point(109, 60);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(188, 20);
+            this.Password.Size = new System.Drawing.Size(188, 22);
             this.Password.TabIndex = 1;
             // 
             // label1
@@ -129,6 +131,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
+#pragma warning disable CS0108 // Член скрывает унаследованный член: отсутствует новое ключевое слово
         private System.Windows.Forms.Button Enter;
+#pragma warning restore CS0108 // Член скрывает унаследованный член: отсутствует новое ключевое слово
     }
 }

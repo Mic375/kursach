@@ -42,23 +42,32 @@ namespace Курсач
 
         private void Enter_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true) {
-                lines[0] = Login.Text;
-                lines[1] = Password.Text;
-                lines[2] = "true"; 
+            if (Login.Text != "" && Password.Text != "")
+            {
+                if (checkBox1.Checked == true)
+                {
+                    lines[0] = Login.Text;
+                    lines[1] = Password.Text;
+                    lines[2] = "true";
+                }
+                else
+                {
+                    lines[0] = "1";
+                    lines[1] = "1";
+                    lines[2] = "1";
+                }
+                DataBase.Login = Login.Text;
+                DataBase.password = Password.Text;
+                File.WriteAllLines(DataBase.LoginFail, lines);
+                this.Hide();
+                Form1 task = new Form1();
+                task.Show();
             }
             else
             {
-                lines[0] = "1";
-                lines[1] = "1";
-                lines[2] = "1";
+                MessageBox.Show("Введите Логин и пароль", "Ошибка");
             }
-            DataBase.Login = Login.Text;
-            DataBase.password = Password.Text;
-            File.WriteAllLines(DataBase.LoginFail, lines);
-            this.Hide();
-            Form1 task = new Form1();
-            task.Show();
+            
         }
 
     }

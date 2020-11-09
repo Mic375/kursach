@@ -49,6 +49,7 @@
             // 
             // Box_sp
             // 
+            this.Box_sp.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_sp.Location = new System.Drawing.Point(12, 44);
             this.Box_sp.MaximumSize = new System.Drawing.Size(334, 343);
             this.Box_sp.MinimumSize = new System.Drawing.Size(334, 343);
@@ -60,6 +61,7 @@
             // 
             // Box_com_gr
             // 
+            this.Box_com_gr.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_com_gr.FormattingEnabled = true;
             this.Box_com_gr.Items.AddRange(new object[] {
             "1 Курс",
@@ -69,7 +71,7 @@
             "Преп"});
             this.Box_com_gr.Location = new System.Drawing.Point(12, 12);
             this.Box_com_gr.Name = "Box_com_gr";
-            this.Box_com_gr.Size = new System.Drawing.Size(334, 21);
+            this.Box_com_gr.Size = new System.Drawing.Size(334, 23);
             this.Box_com_gr.TabIndex = 19;
             this.Box_com_gr.Text = "Списки";
             this.Box_com_gr.SelectedIndexChanged += new System.EventHandler(this.Box_com_gr_SelectedIndexChanged);

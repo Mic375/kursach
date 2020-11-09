@@ -56,6 +56,7 @@
             // 
             // Box_send
             // 
+            this.Box_send.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_send.Location = new System.Drawing.Point(90, 98);
             this.Box_send.Multiline = true;
             this.Box_send.Name = "Box_send";
@@ -65,6 +66,7 @@
             // 
             // Box_theme
             // 
+            this.Box_theme.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_theme.Location = new System.Drawing.Point(90, 145);
             this.Box_theme.Multiline = true;
             this.Box_theme.Name = "Box_theme";
@@ -74,6 +76,7 @@
             // 
             // Box_opis
             // 
+            this.Box_opis.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_opis.Location = new System.Drawing.Point(12, 196);
             this.Box_opis.Multiline = true;
             this.Box_opis.Name = "Box_opis";
@@ -88,6 +91,7 @@
             // 
             // btn_send
             // 
+            this.btn_send.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn_send.Location = new System.Drawing.Point(411, 427);
             this.btn_send.Name = "btn_send";
             this.btn_send.Size = new System.Drawing.Size(87, 32);
@@ -98,6 +102,7 @@
             // 
             // btn_add_File
             // 
+            this.btn_add_File.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn_add_File.Location = new System.Drawing.Point(12, 427);
             this.btn_add_File.Name = "btn_add_File";
             this.btn_add_File.Size = new System.Drawing.Size(84, 32);
@@ -138,6 +143,7 @@
             // 
             // btn_av
             // 
+            this.btn_av.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn_av.Location = new System.Drawing.Point(217, 427);
             this.btn_av.Name = "btn_av";
             this.btn_av.Size = new System.Drawing.Size(82, 32);
@@ -148,6 +154,7 @@
             // 
             // Box_Name
             // 
+            this.Box_Name.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Box_Name.Location = new System.Drawing.Point(90, 53);
             this.Box_Name.Multiline = true;
             this.Box_Name.Name = "Box_Name";
@@ -167,9 +174,10 @@
             // 
             // btn_openList
             // 
-            this.btn_openList.Location = new System.Drawing.Point(539, 427);
+            this.btn_openList.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_openList.Location = new System.Drawing.Point(531, 427);
             this.btn_openList.Name = "btn_openList";
-            this.btn_openList.Size = new System.Drawing.Size(100, 32);
+            this.btn_openList.Size = new System.Drawing.Size(108, 32);
             this.btn_openList.TabIndex = 19;
             this.btn_openList.Text = "Открыть Списки";
             this.btn_openList.UseVisualStyleBackColor = true;
@@ -189,7 +197,7 @@
             this.btn_exit.BackColor = System.Drawing.SystemColors.Control;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.Location = new System.Drawing.Point(635, 1);
+            this.btn_exit.Location = new System.Drawing.Point(626, 1);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(0);
             this.btn_exit.MaximumSize = new System.Drawing.Size(33, 33);
             this.btn_exit.MinimumSize = new System.Drawing.Size(33, 33);

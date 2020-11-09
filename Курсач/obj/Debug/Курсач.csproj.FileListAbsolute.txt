@@ -43,3 +43,4 @@ C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug
 C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.exe
 C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.pdb
 C:\Users\balex\OneDrive\Документы\GitHub\kursach\Курсач\obj\Debug\Курсач.Form4.resources
+C:\Games\Git.Hub\kursach\Курсач\obj\Debug\Курсач.Form4.resources

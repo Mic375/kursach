@@ -35,6 +35,7 @@
             // 
             // close
             // 
+            this.close.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.close.Location = new System.Drawing.Point(16, 42);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(75, 23);
@@ -45,6 +46,7 @@
             // 
             // Exit
             // 
+            this.Exit.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Exit.Location = new System.Drawing.Point(181, 42);
             this.Exit.MaximumSize = new System.Drawing.Size(83, 23);
             this.Exit.MinimumSize = new System.Drawing.Size(83, 23);
