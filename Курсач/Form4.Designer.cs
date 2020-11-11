@@ -71,12 +71,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(276, 80);
+            this.ClientSize = new System.Drawing.Size(282, 88);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.close);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(298, 104);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(298, 104);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

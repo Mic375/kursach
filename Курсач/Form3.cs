@@ -34,7 +34,6 @@ namespace Курсач
             }
 
         }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             
@@ -70,5 +69,9 @@ namespace Курсач
             
         }
 
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

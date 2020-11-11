@@ -44,13 +44,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_openList = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.Bx_File_condition = new System.Windows.Forms.PictureBox();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.Bx_ic = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.Bx_ic = new System.Windows.Forms.PictureBox();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.Bx_File_condition = new System.Windows.Forms.PictureBox();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Bx_File_condition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bx_ic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bx_File_condition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,40 +183,6 @@
             this.btn_openList.UseVisualStyleBackColor = true;
             this.btn_openList.Click += new System.EventHandler(this.btn_openList_Click);
             // 
-            // Bx_File_condition
-            // 
-            this.Bx_File_condition.Location = new System.Drawing.Point(102, 427);
-            this.Bx_File_condition.Name = "Bx_File_condition";
-            this.Bx_File_condition.Size = new System.Drawing.Size(32, 32);
-            this.Bx_File_condition.TabIndex = 20;
-            this.Bx_File_condition.TabStop = false;
-            this.Bx_File_condition.Click += new System.EventHandler(this.Bx_File_condition_Click);
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.Location = new System.Drawing.Point(626, 1);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_exit.MaximumSize = new System.Drawing.Size(33, 33);
-            this.btn_exit.MinimumSize = new System.Drawing.Size(33, 33);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(33, 33);
-            this.btn_exit.TabIndex = 21;
-            this.btn_exit.UseVisualStyleBackColor = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // Bx_ic
-            // 
-            this.Bx_ic.Image = ((System.Drawing.Image)(resources.GetObject("Bx_ic.Image")));
-            this.Bx_ic.Location = new System.Drawing.Point(12, 5);
-            this.Bx_ic.Name = "Bx_ic";
-            this.Bx_ic.Size = new System.Drawing.Size(24, 24);
-            this.Bx_ic.TabIndex = 22;
-            this.Bx_ic.TabStop = false;
-            this.Bx_ic.Click += new System.EventHandler(this.Bx_ic_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -228,6 +194,42 @@
             this.label4.Size = new System.Drawing.Size(65, 16);
             this.label4.TabIndex = 23;
             this.label4.Text = "Рассылка";
+            // 
+            // Bx_ic
+            // 
+            this.Bx_ic.Image = ((System.Drawing.Image)(resources.GetObject("Bx_ic.Image")));
+            this.Bx_ic.Location = new System.Drawing.Point(12, 5);
+            this.Bx_ic.Name = "Bx_ic";
+            this.Bx_ic.Size = new System.Drawing.Size(24, 24);
+            this.Bx_ic.TabIndex = 22;
+            this.Bx_ic.TabStop = false;
+            this.Bx_ic.Click += new System.EventHandler(this.Bx_ic_Click);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_exit.Image = global::Курсач.Properties.Resources.exit1;
+            this.btn_exit.Location = new System.Drawing.Point(626, 1);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_exit.MaximumSize = new System.Drawing.Size(33, 33);
+            this.btn_exit.MinimumSize = new System.Drawing.Size(33, 33);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(33, 33);
+            this.btn_exit.TabIndex = 21;
+            this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // Bx_File_condition
+            // 
+            this.Bx_File_condition.Location = new System.Drawing.Point(102, 427);
+            this.Bx_File_condition.Name = "Bx_File_condition";
+            this.Bx_File_condition.Size = new System.Drawing.Size(32, 32);
+            this.Bx_File_condition.TabIndex = 20;
+            this.Bx_File_condition.TabStop = false;
+            this.Bx_File_condition.Click += new System.EventHandler(this.Bx_File_condition_Click);
             // 
             // form1BindingSource
             // 
@@ -267,8 +269,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Bx_File_condition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bx_ic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bx_File_condition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
