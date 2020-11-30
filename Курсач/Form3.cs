@@ -65,6 +65,7 @@ namespace Курсач
             else
             {
                 MessageBox.Show("Введите Логин и пароль", "Ошибка");
+                MessageBox.Show("Если хотите посмотреть программу, то введите 'пробел' в оба поля", "Ошибка");
             }
             
         }
@@ -72,6 +73,11 @@ namespace Курсач
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
